@@ -139,11 +139,13 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="clock.cpp" />
     <ClCompile Include="encryption.cpp" />
     <ClCompile Include="handles.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="clock.h" />
     <ClInclude Include="encryption.h" />
     <ClInclude Include="handles.h" />
   </ItemGroup>

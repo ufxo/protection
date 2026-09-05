@@ -24,12 +24,18 @@
     <ClCompile Include="encryption.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="clock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="handles.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="encryption.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clock.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
