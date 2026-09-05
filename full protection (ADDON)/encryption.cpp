@@ -4,6 +4,8 @@
 #include <string>
 #include <cstdint>
 
+/*
+Old method of doing this (Same key across every class)
 long long tK = static_cast<long long>(
     time(nullptr) * 53.6989123491239 +
     (rand() % 10000 * 0.6192349) * 312.5143959832
@@ -11,8 +13,10 @@ long long tK = static_cast<long long>(
 
 int gGK()
 {
-	return tK;
+    return tK;
 }
+
+*/
 
 std::string xorCipher(const std::string& input, int key) {
     std::string output = input;

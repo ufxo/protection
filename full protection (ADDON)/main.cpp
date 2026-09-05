@@ -9,7 +9,7 @@ int main()
 {
     initHandlesThread();
 
-    std::cout << "\n" << "handles are nice" << "\n";
+    std::cout << "\n" << "Handle check passed." << "\n";
 
     std::string f = "";
     std::cin >> f;

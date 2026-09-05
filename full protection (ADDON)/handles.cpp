@@ -181,19 +181,26 @@ std::vector<std::wstring> FindProcessesWithHandleToMe()
     return results;
 }
 
-const std::vector<std::wstring> initHandles = encryption::encryptWVector(FindProcessesWithHandleToMe(), gGK());
+EncKey key;
+
+double initEncKey()
+{
+    return key.getKey();
+}
+
+const double encKey = initEncKey();
+const std::vector<std::wstring> initHandles = encryption::encryptWVector(FindProcessesWithHandleToMe(), encKey);
 
 // you dont need to use this method (creating and detaching a thread), its just an example :)
-
 
 void checkHandles() {
     while (true)
     {
         std::this_thread::sleep_for(std::chrono::milliseconds(100));
 
-        if (!(encryption::decryptWVector(initHandles, gGK()) == FindProcessesWithHandleToMe()))
-            std::cout << "CALL: called exit() due to !(encryption::decryptWVector(initHandles, gGK()) == FindProcessesWithHandleToMe() in handles.cpp";
-
+        if (!(encryption::decryptWVector(initHandles, encKey) == FindProcessesWithHandleToMe()))
+            std::cout << "CALL: called exit() due to handle mistmatch";
+    
     }
 
 }
