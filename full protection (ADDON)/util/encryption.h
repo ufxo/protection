@@ -6,7 +6,7 @@
 
 class EncKey {
 public:
-    EncKey() {
+    EncKey() { // i know it violates basic good naming practices to do it like this (have an uppercase letter here, but i am too lazy to change it)
         uint64_t nanos = std::chrono::duration_cast<std::chrono::nanoseconds>(
             std::chrono::high_resolution_clock::now().time_since_epoch()
         ).count();
@@ -20,7 +20,7 @@ public:
     }
 
     double getKey() {
-        std::cout << "[encryption.h] enckey: " << value;
+        std::cout << "[encryption.h] enckey: " << value << "\n\n";
         return value;
     }
 

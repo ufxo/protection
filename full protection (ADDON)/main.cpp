@@ -1,14 +1,21 @@
 #include <iostream>
 
-#include "handles.h"
-#include "clock.h"
+#include "checks/handles.h"
+#include "checks/clock.h"
+#include "checks/debugger.h"
+#include "globals.h"
 
 #include "Windows.h"
 
 int main()
 {
+    if(globals::devMode)
+        std::cout << "[!!!] DEV MODE IS ON [!!!]\n\n";
+
     initHandlesThread();
-    initClockCheck();
+    // initClockCheck(); // it is broken :( TODO: fix
+    if(!globals::devMode)
+        initAntiDebugger();
 
     std::cout << "\n" << "Handle check passed." << "\n";
 

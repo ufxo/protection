@@ -115,6 +115,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
     </Link>
     <Manifest>
       <EnableSegmentHeap>true</EnableSegmentHeap>
@@ -133,21 +134,25 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
     </Link>
     <Manifest>
       <EnableSegmentHeap>true</EnableSegmentHeap>
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="clock.cpp" />
-    <ClCompile Include="encryption.cpp" />
-    <ClCompile Include="handles.cpp" />
+    <ClCompile Include="checks\clock.cpp" />
+    <ClCompile Include="checks\debugger.cpp" />
+    <ClCompile Include="util\encryption.cpp" />
+    <ClCompile Include="checks\handles.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="clock.h" />
-    <ClInclude Include="encryption.h" />
-    <ClInclude Include="handles.h" />
+    <ClInclude Include="checks\clock.h" />
+    <ClInclude Include="checks\debugger.h" />
+    <ClInclude Include="globals.h" />
+    <ClInclude Include="util\encryption.h" />
+    <ClInclude Include="checks\handles.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

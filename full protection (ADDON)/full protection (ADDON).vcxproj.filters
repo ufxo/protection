@@ -18,25 +18,34 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="handles.cpp">
+    <ClCompile Include="checks\handles.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="encryption.cpp">
+    <ClCompile Include="util\encryption.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="clock.cpp">
+    <ClCompile Include="checks\clock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="checks\debugger.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="handles.h">
+    <ClInclude Include="checks\handles.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="encryption.h">
+    <ClInclude Include="util\encryption.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="clock.h">
+    <ClInclude Include="checks\clock.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="checks\debugger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
