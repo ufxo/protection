@@ -22,7 +22,7 @@ void clockCheck()
 
 		auto onehundred = msNew - ms;
 
-		if (onehundred < 201)  // if u have a super bad PC its over
+		if (onehundred < 1000) // changed it to a nice round number
 			std::cout << "CALL: exit() called due to time mistmatch in clock.cpp";
 	}
 }

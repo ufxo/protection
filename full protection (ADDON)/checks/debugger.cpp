@@ -1,6 +1,3 @@
-// anti_debug_checks.cpp
-// Basic anti-debugging checks (Windows). Excludes timing and handle checks (already covered).
-
 #include <windows.h>
 #include <winternl.h>
 #include <iostream>
