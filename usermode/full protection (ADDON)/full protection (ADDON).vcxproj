@@ -24,6 +24,7 @@
     <ProjectGuid>{02e9454a-3042-43b2-bb82-31c51964eac8}</ProjectGuid>
     <RootNamespace>fullprotectionADDON</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>usermode</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
