@@ -13,7 +13,7 @@ int main()
         std::cout << "[!!!] DEV MODE IS ON [!!!]\n\n";
 
     initHandlesThread();
-    // initClockCheck(); // it is broken :( TODO: fix
+    initClockCheck();
     if(!globals::devMode)
         initAntiDebugger();
 
